@@ -1,3 +1,5 @@
+// first commit on proposal // 
+
 /*
 
   In order to do these exercises you'll need your newly acquired knowledge on
@@ -44,9 +46,28 @@
   - Give persons the ability to eat edibles.
   - When eating an edible, it should be pushed into a "stomach" property which is an array.
   - Give persons the ability to poop.
-  - When pooping, the stomach should empty.
+  - When pooping, the stomach should empty. */
 
-  TASK 2
+
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    // this.greet = function() {
+    //     return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    // }
+};
+
+Person.prototype.greet = function() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+}
+
+const Alison = new Person('Alison', 21);
+console.log(Alison.greet());
+
+
+
+/*  TASK 2
 
   - Build a Car constructor that takes model name and make.
   - Give cars the ability to drive a distance.
@@ -108,10 +129,10 @@
 */
 
 /*
-  * Inheritance chain: GameObject -> CharacterStats -> Humanoid
-  * Instances of Humanoid should have all of the same properties as CharacterStats and GameObject.
-  * Instances of CharacterStats should have all of the same properties as GameObject.
-*/
+ * Inheritance chain: GameObject -> CharacterStats -> Humanoid
+ * Instances of Humanoid should have all of the same properties as CharacterStats and GameObject.
+ * Instances of CharacterStats should have all of the same properties as GameObject.
+ */
 
 // Test you work by un-commenting these 3 objects and the list of console logs below:
 
